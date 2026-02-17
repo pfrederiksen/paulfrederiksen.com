@@ -16,22 +16,22 @@ import Lightbox from "./Lightbox.astro";
       </p>
     </div>
 
-    <!-- Photo grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+    <!-- Photo masonry grid -->
+    <div class="columns-1 sm:columns-2 lg:columns-3 gap-5 [column-fill:_balance]">
       {
         photos.map((photo, i) => (
           <figure
-            class="group animate-on-scroll overflow-hidden rounded-sm cursor-pointer"
+            class="group animate-on-scroll overflow-hidden rounded-sm cursor-pointer mb-5 break-inside-avoid"
             style={`transition-delay: ${i * 100}ms`}
             data-lightbox-trigger={i}
           >
-            <div class="aspect-[3/2] overflow-hidden">
+            <div class="overflow-hidden">
               <Image
                 src={photo.src}
                 alt={photo.alt}
                 widths={[400, 640, 800, 1024]}
                 sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-[1.02]"
                 loading={i === 0 ? "eager" : "lazy"}
               />
             </div>
