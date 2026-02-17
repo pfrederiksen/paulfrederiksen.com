@@ -4,6 +4,8 @@ export interface Photo {
   title: string;
   location?: string;
   year?: string;
+  camera?: string;
+  film?: string;
 }
 
 // Import images so Astro can optimize them
