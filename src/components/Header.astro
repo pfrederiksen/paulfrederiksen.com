@@ -1,0 +1,62 @@
+---
+import ThemeToggle from "./ThemeToggle.astro";
+
+const navLinks = [
+  { label: "Work", href: "#gallery" },
+  { label: "About", href: "#about" },
+  { label: "Connect", href: "#contact" },
+];
+---
+
+<header
+  id="site-header"
+  class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+>
+  <div class="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
+    <a
+      href="#"
+      class="text-sm font-light tracking-[0.15em] uppercase text-stone-900 dark:text-stone-100 transition-colors"
+    >
+      Paul Frederiksen
+    </a>
+
+    <nav class="flex items-center gap-6">
+      {
+        navLinks.map((link) => (
+          <a
+            href={link.href}
+            class="hidden sm:inline-block text-xs font-light tracking-[0.1em] uppercase text-stone-500 hover:text-stone-900 dark:text-stone-400 dark:hover:text-stone-100 transition-colors"
+          >
+            {link.label}
+          </a>
+        ))
+      }
+      <ThemeToggle />
+    </nav>
+  </div>
+</header>
+
+<script>
+  const header = document.getElementById("site-header")!;
+
+  const onScroll = () => {
+    if (window.scrollY > 50) {
+      header.classList.add(
+        "bg-stone-50/80",
+        "dark:bg-stone-950/80",
+        "backdrop-blur-md",
+        "shadow-sm"
+      );
+    } else {
+      header.classList.remove(
+        "bg-stone-50/80",
+        "dark:bg-stone-950/80",
+        "backdrop-blur-md",
+        "shadow-sm"
+      );
+    }
+  };
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+</script>

@@ -1,0 +1,26 @@
+---
+import SectionHeading from "./SectionHeading.astro";
+import PhotoCard from "./PhotoCard.astro";
+import { photos } from "../data/photos";
+---
+
+<section id="gallery" class="py-24 px-6">
+  <div class="mx-auto max-w-6xl">
+    <div class="animate-on-scroll">
+      <SectionHeading title="Selected Work" />
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {
+        photos.map((photo, i) => (
+          <div
+            class="animate-on-scroll"
+            style={`transition-delay: ${i * 100}ms`}
+          >
+            <PhotoCard photo={photo} />
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
