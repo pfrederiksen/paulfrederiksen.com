@@ -15,6 +15,7 @@ import desertOverlook from "../assets/photos/03-desert-overlook.jpg";
 import desertCrossingBw from "../assets/photos/04-desert-crossing-bw.jpg";
 import crossTraffic from "../assets/photos/05-cross-traffic.jpg";
 import roysMotelCafe from "../assets/photos/06-roys-motel-cafe.jpg";
+import edgeOfVegas from "../assets/photos/07-edge-of-vegas.jpg";
 
 export const photos: Photo[] = [
   {
@@ -58,5 +59,11 @@ export const photos: Photo[] = [
     title: "Roy's Motel & Cafe",
     location: "Amboy, California",
     year: "2024",
+  },
+  {
+    src: edgeOfVegas,
+    alt: "Black and white photograph of an unfinished Las Vegas subdivision with empty roads, streetlights, and the Strip dissolving into haze",
+    title: "Edge of Vegas",
+    location: "Las Vegas, Nevada",
   },
 ];
