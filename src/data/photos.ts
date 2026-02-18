@@ -16,6 +16,7 @@ import desertCrossingBw from "../assets/photos/04-desert-crossing-bw.jpg";
 import crossTraffic from "../assets/photos/05-cross-traffic.jpg";
 import roysMotelCafe from "../assets/photos/06-roys-motel-cafe.jpg";
 import edgeOfVegas from "../assets/photos/07-edge-of-vegas.jpg";
+import saltusRoad from "../assets/photos/08-saltus-road.jpg";
 
 export const photos: Photo[] = [
   {
@@ -26,6 +27,12 @@ export const photos: Photo[] = [
     year: "2024",
   },
   {
+    src: edgeOfVegas,
+    alt: "Black and white photograph of an unfinished Las Vegas subdivision with empty roads, streetlights, and the Strip dissolving into haze",
+    title: "Edge of Vegas",
+    location: "Las Vegas, Nevada",
+  },
+  {
     src: roysGas,
     alt: "Roy's Gas station with vintage pumps and price sign in the Mojave Desert",
     title: "Roy's Gas",
@@ -33,23 +40,15 @@ export const photos: Photo[] = [
     year: "2024",
   },
   {
-    src: desertOverlook,
-    alt: "Interpretive sign overlooking a vast desert basin with distant mountains",
-    title: "Desert Overlook",
-    location: "Death Valley",
-    year: "2024",
+    src: saltusRoad,
+    alt: "Two-lane highway vanishing into distant mountains with power lines in the Mojave Desert",
+    title: "Saltus Road",
+    location: "Saltus, California",
   },
   {
     src: desertCrossingBw,
     alt: "Stop sign and power lines at a desert crossroads in black and white",
     title: "Desert Crossing",
-    location: "California",
-    year: "2024",
-  },
-  {
-    src: crossTraffic,
-    alt: "Stop sign with cross traffic warning on a sandy desert highway",
-    title: "Cross Traffic",
     location: "California",
     year: "2024",
   },
@@ -61,9 +60,17 @@ export const photos: Photo[] = [
     year: "2024",
   },
   {
-    src: edgeOfVegas,
-    alt: "Black and white photograph of an unfinished Las Vegas subdivision with empty roads, streetlights, and the Strip dissolving into haze",
-    title: "Edge of Vegas",
-    location: "Las Vegas, Nevada",
+    src: desertOverlook,
+    alt: "Interpretive sign overlooking a vast desert basin with distant mountains",
+    title: "Desert Overlook",
+    location: "Death Valley",
+    year: "2024",
+  },
+  {
+    src: crossTraffic,
+    alt: "Stop sign with cross traffic warning on a sandy desert highway",
+    title: "Cross Traffic",
+    location: "California",
+    year: "2024",
   },
 ];
