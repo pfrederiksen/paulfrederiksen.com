@@ -23,7 +23,7 @@ export const photos: Photo[] = [
     src: desertHighway,
     alt: "Desert highway stretching toward distant mountains under open sky",
     title: "Desert Highway",
-    location: "Nevada",
+    location: "California",
     year: "2024",
   },
   {
