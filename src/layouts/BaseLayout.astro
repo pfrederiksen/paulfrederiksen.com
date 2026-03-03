@@ -101,6 +101,10 @@ const ogImageURL = new URL(ogImage, Astro.site);
     class="bg-stone-50 text-stone-900 dark:bg-stone-950 dark:text-stone-100 font-sans antialiased transition-colors duration-300"
   >
     <slot />
+
+    <!-- Analytics -->
+    <script data-goatcounter="https://paulfrederiksen.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js" is:inline></script>
   </body>
 </html>
 
