@@ -1,0 +1,82 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const title = "ReciproMeter Privacy Policy";
+const description =
+  "Privacy policy for ReciproMeter, a privacy-first iPhone light meter for film photographers.";
+---
+
+<BaseLayout title={title} description={description}>
+  <main class="min-h-screen px-6 pt-32 pb-24 bg-stone-50 dark:bg-stone-950">
+    <div class="mx-auto max-w-3xl">
+      <a
+        href="/reciprometer"
+        class="inline-flex items-center gap-2 text-xs font-medium tracking-[0.16em] uppercase text-stone-500 transition hover:text-stone-900 dark:text-stone-400 dark:hover:text-stone-100"
+      >
+        <span aria-hidden="true">←</span>
+        Back to ReciproMeter
+      </a>
+
+      <article class="mt-10 rounded-[2rem] border border-stone-200 bg-white p-8 shadow-sm dark:border-stone-800 dark:bg-stone-900">
+        <p class="text-xs font-medium tracking-[0.18em] uppercase text-stone-500 dark:text-stone-400">
+          Last updated April 13, 2026
+        </p>
+        <h1 class="mt-4 text-4xl font-light tracking-[0.06em] uppercase text-stone-900 dark:text-stone-100">
+          ReciproMeter Privacy Policy
+        </h1>
+
+        <div class="mt-10 space-y-10 text-sm sm:text-base leading-relaxed text-stone-600 dark:text-stone-400">
+          <section>
+            <h2 class="text-xl font-medium text-stone-900 dark:text-stone-100">What ReciproMeter accesses</h2>
+            <p class="mt-3">
+              ReciproMeter requests access to the device camera so it can read live
+              exposure metadata such as ISO, shutter speed, and aperture. That information
+              is used to estimate ambient light and calculate exposure recommendations.
+            </p>
+            <p class="mt-3">
+              ReciproMeter does not use the camera to capture, store, or upload photos or video.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-medium text-stone-900 dark:text-stone-100">Data collection</h2>
+            <p class="mt-3">
+              ReciproMeter does not collect, sell, or share personal data.
+            </p>
+            <p class="mt-3">
+              ReciproMeter does not require user accounts and does not include third-party advertising SDKs.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-medium text-stone-900 dark:text-stone-100">Data stored on device</h2>
+            <p class="mt-3">
+              ReciproMeter may store selected film settings, custom film profiles, appearance
+              preferences, reciprocity preferences, and purchase state locally on your device.
+            </p>
+            <p class="mt-3">
+              This information remains on device unless you choose to export custom film data yourself.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-medium text-stone-900 dark:text-stone-100">In-app purchases</h2>
+            <p class="mt-3">
+              ReciproMeter offers a one-time lifetime unlock through Apple In-App Purchase.
+              Payment processing is handled by Apple. ReciproMeter does not receive your full
+              payment details.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-medium text-stone-900 dark:text-stone-100">Contact</h2>
+            <p class="mt-3">
+              For support or privacy questions, use the support page at
+              <a href="/reciprometer/support" class="underline decoration-stone-300 underline-offset-4 hover:text-stone-900 dark:decoration-stone-700 dark:hover:text-stone-100">/reciprometer/support</a>.
+            </p>
+          </section>
+        </div>
+      </article>
+    </div>
+  </main>
+</BaseLayout>

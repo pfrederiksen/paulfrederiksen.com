@@ -1,0 +1,208 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const title = "ReciproMeter — Film Reciprocity and Light Meter";
+const description =
+  "ReciproMeter is a privacy-first iPhone light meter for film photographers, with reciprocity correction, exposure lock, and long-exposure tools.";
+---
+
+<BaseLayout title={title} description={description}>
+  <main class="min-h-screen bg-stone-50 dark:bg-stone-950">
+    <section class="relative overflow-hidden px-6 pt-32 pb-20">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(245,158,11,0.16),_transparent_24%),radial-gradient(circle_at_bottom_right,_rgba(120,113,108,0.12),_transparent_28%)] dark:bg-[radial-gradient(circle_at_top_left,_rgba(251,191,36,0.14),_transparent_24%),radial-gradient(circle_at_bottom_right,_rgba(214,211,209,0.06),_transparent_28%)]"></div>
+      <div class="relative mx-auto max-w-6xl">
+        <a
+          href="/"
+          class="inline-flex items-center gap-2 text-xs font-medium tracking-[0.16em] uppercase text-stone-500 transition hover:text-stone-900 dark:text-stone-400 dark:hover:text-stone-100"
+        >
+          <span aria-hidden="true">←</span>
+          Back to paulfrederiksen.com
+        </a>
+
+        <div class="mt-12 grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+          <div>
+            <p class="text-xs font-medium tracking-[0.24em] uppercase text-amber-700 dark:text-amber-400">
+              ReciproMeter
+            </p>
+            <h1 class="mt-4 text-4xl sm:text-6xl font-light tracking-[0.08em] uppercase text-stone-900 dark:text-stone-100">
+              Film reciprocity,
+              <br />
+              measured cleanly.
+            </h1>
+            <p class="mt-8 max-w-2xl text-base sm:text-lg font-light leading-relaxed text-stone-600 dark:text-stone-400">
+              ReciproMeter is a privacy-first iPhone app for film photographers. Meter
+              scenes with your camera, lock the reading, apply reciprocity correction,
+              and keep long-exposure timing close at hand.
+            </p>
+
+            <div class="mt-10 flex flex-wrap gap-3">
+              <span class="rounded-full border border-amber-200/80 bg-amber-50 px-4 py-2 text-xs font-medium tracking-[0.12em] uppercase text-amber-800 dark:border-amber-500/30 dark:bg-amber-500/10 dark:text-amber-300">
+                $9.99 lifetime unlock
+              </span>
+              <span class="rounded-full border border-stone-200 bg-white/85 px-4 py-2 text-xs font-medium tracking-[0.12em] uppercase text-stone-700 dark:border-stone-700 dark:bg-stone-900/60 dark:text-stone-300">
+                iPhone-only v1
+              </span>
+            </div>
+
+            <div class="mt-10 flex flex-wrap gap-4">
+              <a
+                href="/reciprometer/privacy"
+                class="inline-flex items-center justify-center rounded-full bg-stone-900 px-6 py-3 text-sm font-medium tracking-[0.12em] uppercase text-stone-50 transition hover:bg-stone-700 dark:bg-stone-100 dark:text-stone-950 dark:hover:bg-stone-300"
+              >
+                Privacy Policy
+              </a>
+              <a
+                href="/reciprometer/support"
+                class="inline-flex items-center justify-center rounded-full border border-stone-300 px-6 py-3 text-sm font-medium tracking-[0.12em] uppercase text-stone-700 transition hover:border-stone-900 hover:text-stone-900 dark:border-stone-700 dark:text-stone-300 dark:hover:border-stone-100 dark:hover:text-stone-100"
+              >
+                Support
+              </a>
+            </div>
+          </div>
+
+          <div class="rounded-[2rem] border border-stone-200/80 bg-white/85 p-8 shadow-[0_30px_90px_rgba(28,25,23,0.12)] backdrop-blur dark:border-stone-800 dark:bg-stone-900/80 dark:shadow-[0_30px_90px_rgba(0,0,0,0.35)]">
+            <div class="flex items-center gap-5">
+              <img
+                src="/reciprometer/icon.png"
+                alt="ReciproMeter app icon"
+                class="h-24 w-24 rounded-[1.6rem] shadow-lg"
+              />
+              <div>
+                <p class="text-xs font-medium tracking-[0.18em] uppercase text-stone-500 dark:text-stone-400">
+                  Privacy-first metering
+                </p>
+                <p class="mt-2 text-2xl font-light text-stone-900 dark:text-stone-100">
+                  No photos captured or saved
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-8 space-y-4">
+              <div class="rounded-2xl bg-stone-100/80 p-5 dark:bg-stone-800/70">
+                <p class="text-xs font-medium tracking-[0.18em] uppercase text-stone-500 dark:text-stone-400">
+                  What it does
+                </p>
+                <p class="mt-3 text-sm leading-relaxed text-stone-700 dark:text-stone-300">
+                  Reads live exposure metadata from the iPhone camera, calculates a base
+                  shutter speed for your chosen aperture and film ISO, then applies film
+                  reciprocity correction where needed.
+                </p>
+              </div>
+              <div class="rounded-2xl bg-stone-100/80 p-5 dark:bg-stone-800/70">
+                <p class="text-xs font-medium tracking-[0.18em] uppercase text-stone-500 dark:text-stone-400">
+                  Built for film
+                </p>
+                <p class="mt-3 text-sm leading-relaxed text-stone-700 dark:text-stone-300">
+                  Includes official datasheet-backed film profiles, plus clearly separated
+                  community and experimental tiers when manufacturers stop short.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-6 py-20">
+      <div class="mx-auto max-w-6xl grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+        <article class="rounded-[1.6rem] border border-stone-200 bg-white p-6 dark:border-stone-800 dark:bg-stone-900">
+          <p class="text-xs font-medium tracking-[0.18em] uppercase text-stone-500 dark:text-stone-400">
+            Live Metering
+          </p>
+          <h2 class="mt-3 text-xl font-light text-stone-900 dark:text-stone-100">
+            Full-screen camera view
+          </h2>
+          <p class="mt-4 text-sm leading-relaxed text-stone-600 dark:text-stone-400">
+            Meter with a live preview, expand to a full-screen view, and lock the exposure
+            once framing looks right.
+          </p>
+        </article>
+
+        <article class="rounded-[1.6rem] border border-stone-200 bg-white p-6 dark:border-stone-800 dark:bg-stone-900">
+          <p class="text-xs font-medium tracking-[0.18em] uppercase text-stone-500 dark:text-stone-400">
+            Reciprocity
+          </p>
+          <h2 class="mt-3 text-xl font-light text-stone-900 dark:text-stone-100">
+            Official data first
+          </h2>
+          <p class="mt-4 text-sm leading-relaxed text-stone-600 dark:text-stone-400">
+            Uses manufacturer formulas and tables where available, with transparency when
+            long-exposure guidance becomes community-derived or experimental.
+          </p>
+        </article>
+
+        <article class="rounded-[1.6rem] border border-stone-200 bg-white p-6 dark:border-stone-800 dark:bg-stone-900">
+          <p class="text-xs font-medium tracking-[0.18em] uppercase text-stone-500 dark:text-stone-400">
+            Workflow
+          </p>
+          <h2 class="mt-3 text-xl font-light text-stone-900 dark:text-stone-100">
+            Metering ISO override
+          </h2>
+          <p class="mt-4 text-sm leading-relaxed text-stone-600 dark:text-stone-400">
+            Override box speed when rating film differently, then carry the corrected time
+            straight into the built-in bulb timer.
+          </p>
+        </article>
+
+        <article class="rounded-[1.6rem] border border-stone-200 bg-white p-6 dark:border-stone-800 dark:bg-stone-900">
+          <p class="text-xs font-medium tracking-[0.18em] uppercase text-stone-500 dark:text-stone-400">
+            Film Library
+          </p>
+          <h2 class="mt-3 text-xl font-light text-stone-900 dark:text-stone-100">
+            Built-in and custom stocks
+          </h2>
+          <p class="mt-4 text-sm leading-relaxed text-stone-600 dark:text-stone-400">
+            Browse built-in films, add your own custom profiles, and import or export film
+            data when your workflow needs it.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="px-6 pb-24">
+      <div class="mx-auto grid max-w-6xl gap-6 lg:grid-cols-[1fr_0.9fr]">
+        <div class="rounded-[2rem] border border-stone-200 bg-stone-100/80 p-8 dark:border-stone-800 dark:bg-stone-900/70">
+          <p class="text-xs font-medium tracking-[0.18em] uppercase text-stone-500 dark:text-stone-400">
+            Privacy
+          </p>
+          <h2 class="mt-3 text-3xl font-light text-stone-900 dark:text-stone-100">
+            Camera metadata only
+          </h2>
+          <p class="mt-5 max-w-2xl text-sm sm:text-base leading-relaxed text-stone-600 dark:text-stone-400">
+            ReciproMeter asks for camera access so it can read live exposure metadata such
+            as ISO, shutter speed, and aperture. It does not capture or upload your photos,
+            and it does not require an account.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a
+              href="/reciprometer/privacy"
+              class="inline-flex items-center justify-center rounded-full bg-stone-900 px-5 py-3 text-sm font-medium tracking-[0.12em] uppercase text-stone-50 transition hover:bg-stone-700 dark:bg-stone-100 dark:text-stone-950 dark:hover:bg-stone-300"
+            >
+              Read Privacy Policy
+            </a>
+            <a
+              href="/reciprometer/support"
+              class="inline-flex items-center justify-center rounded-full border border-stone-300 px-5 py-3 text-sm font-medium tracking-[0.12em] uppercase text-stone-700 transition hover:border-stone-900 hover:text-stone-900 dark:border-stone-700 dark:text-stone-300 dark:hover:border-stone-100 dark:hover:text-stone-100"
+            >
+              Get Support
+            </a>
+          </div>
+        </div>
+
+        <div class="rounded-[2rem] border border-amber-200/80 bg-amber-50/80 p-8 dark:border-amber-500/20 dark:bg-amber-500/10">
+          <p class="text-xs font-medium tracking-[0.18em] uppercase text-amber-800 dark:text-amber-300">
+            Release
+          </p>
+          <h2 class="mt-3 text-3xl font-light text-stone-900 dark:text-stone-100">
+            Launching on the App Store
+          </h2>
+          <p class="mt-5 text-sm sm:text-base leading-relaxed text-stone-700 dark:text-stone-300">
+            ReciproMeter is being prepared for App Store release as a free download with a
+            one-time lifetime unlock. This site hosts the support and privacy pages required
+            for submission.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
