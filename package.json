@@ -3,16 +3,16 @@
   "type": "module",
   "version": "1.0.0",
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview"
+    "dev": "NODE_OPTIONS=--disable-warning=DEP0205 astro dev",
+    "build": "NODE_OPTIONS=--disable-warning=DEP0205 astro build",
+    "preview": "NODE_OPTIONS=--disable-warning=DEP0205 astro preview"
   },
   "dependencies": {
-    "@astrojs/sitemap": "^3.7.0",
-    "@tailwindcss/vite": "^4.1.18",
-    "astro": "^5.17.2",
+    "@astrojs/sitemap": "^3.7.2",
+    "@tailwindcss/vite": "^4.3.0",
+    "astro": "^6.3.6",
     "exif-reader": "^2.0.3",
     "sharp": "^0.34.5",
-    "tailwindcss": "^4.1.18"
+    "tailwindcss": "^4.3.0"
   }
 }
