@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://paulfrederiksen.com/sitemap-index.xml
+
+Sitemap: https://paulfrederiksen.com/checklists/sitemap.xml
